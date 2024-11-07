@@ -10,101 +10,206 @@
     <link rel="stylesheet" href="../output.css" />
     <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
   </head>
   <body>
-    <section class="min-h-screen h-screen bg-[url('img/bg.png')] p-10 text-white bg-cover bg-no-repeat">
+    <section
+      class="min-h-screen h-screen bg-[url('img/bg.png')] p-10 text-white bg-cover bg-no-repeat"
+    >
       <!-- Content -->
-      <div class="p-16 mx-auto max-w-7xl rounded-3xl border backdrop-blur-sm border-white/50" style="background: linear-gradient(318deg, rgba(255, 255, 255, 0.30) -5.84%, rgba(255, 255, 255, 0.00) 78.59%); max-height: calc(100vh - 4rem);">
+      <div
+        class="p-16 mx-auto max-w-7xl rounded-3xl border backdrop-blur-sm border-white/50"
+        style="
+          background: linear-gradient(
+            318deg,
+            rgba(255, 255, 255, 0.3) -5.84%,
+            rgba(255, 255, 255, 0) 78.59%
+          );
+          max-height: calc(100vh - 4rem);
+        "
+      >
         <div class="mx-auto max-w-7xl">
           <div class="flex justify-between items-center mb-16">
-            <h1 class="text-4xl font-bold">
-              本日入住人數
-            </h1>
-            <a href="../index.html" class="px-4 py-2 text-gray-900 bg-white rounded transition-colors hover:bg-gray-200 duration-50">
+            <h1 class="text-4xl font-bold">本日入住人數</h1>
+            <a
+              href="../index.html"
+              class="px-4 py-2 text-gray-900 bg-white rounded transition-colors hover:bg-gray-200 duration-50"
+            >
               回首頁
             </a>
           </div>
-          
-          <div class="overflow-hidden rounded-xl border border-blue-400/20 bg-[#0A1929]/50 backdrop-blur-sm ">
-            <div class="overflow-x-auto overflow-y-auto" style="max-height: 400px;">
-                  <table class="w-full min-w-full text-xl border-collapse">
-                      <thead>
-                          <tr>
-                              <th class="w-32 bg-[#20B2AA] p-4 text-center font-medium"></th>
-                              <th class="bg-[#20B2AA] p-4 text-center font-medium">項目一</th>
-                              <th class="bg-[#20B2AA] p-4 text-center font-medium">項目二</th>
-                              <th class="bg-[#20B2AA] p-4 text-center font-medium">項目三</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr class="border-b border-blue-400/20">
-                              <td class="bg-[#20B2AA] p-4 text-center font-medium hover:bg-teal-600 transition-all duration-50">
-                                <button type="button" class="" aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-scale-animation-modal" data-hs-overlay="#hs-scale-animation-modal">
-                                  崇恩老人
-                                </button>
-                              </td>
-                              <td class="p-4 text-center text-gray-900 bg-white/90">13</td>
-                              <td class="p-4 text-center text-gray-900 bg-white/90">3</td>
-                              <td class="p-4 text-center text-gray-900 bg-white/90">5</td>
-                          </tr>
-                          <tr class="border-b border-blue-400/20">
-                              <td class="bg-[#20B2AA] p-4 text-center font-medium">崇恩護家</td>
-                              <td class="p-4 text-center text-gray-900 bg-white/90">22</td>
-                              <td class="p-4 text-center text-gray-900 bg-white/90">11</td>
-                              <td class="p-4 text-center text-gray-900 bg-white/90">13</td>
-                          </tr>
-                          <tr class="border-b border-blue-400/20">
-                              <td class="bg-[#20B2AA] p-4 text-center font-medium">崇祐老人</td>
-                              <td class="p-4 text-center text-gray-900 bg-white/90">4</td>
-                              <td class="p-4 text-center text-gray-900 bg-white/90">31</td>
-                              <td class="p-4 text-center text-gray-900 bg-white/90">13</td>
-                          </tr>
-                          <tr class="border-b border-blue-400/20">
-                              <td class="bg-[#20B2AA] p-4 text-center font-medium">崇祐護家</td>
-                              <td class="p-4 text-center text-gray-900 bg-white/90">4</td>
-                              <td class="p-4 text-center text-gray-900 bg-white/90">31</td>
-                              <td class="p-4 text-center text-gray-900 bg-white/90">13</td>
-                          </tr>
-                          <tr class="border-b border-blue-400/20">
-                              <td class="bg-[#20B2AA] p-4 text-center font-medium">崇智護家</td>
-                              <td class="p-4 text-center text-gray-900 bg-white/90">4</td>
-                              <td class="p-4 text-center text-gray-900 bg-white/90">31</td>
-                              <td class="p-4 text-center text-gray-900 bg-white/90">13</td>
-                          </tr>
-                          <tr class="border-b border-blue-400/20">
-                              <td class="bg-[#20B2AA] p-4 text-center font-medium">普祐老人</td>
-                              <td class="p-4 text-center text-gray-900 bg-white/90">4</td>
-                              <td class="p-4 text-center text-gray-900 bg-white/90">31</td>
-                              <td class="p-4 text-center text-gray-900 bg-white/90">13</td>
-                          </tr>
-                          <tr>
-                              <td class="bg-[#20B2AA] p-4 text-center font-medium">傳祐老人</td>
-                              <td class="p-4 text-center text-gray-900 bg-white/90">4</td>
-                              <td class="p-4 text-center text-gray-900 bg-white/90">31</td>
-                              <td class="p-4 text-center text-gray-900 bg-white/90">13</td>
-                          </tr>
-                      </tbody>
-                  </table>
-              </div>
+
+          <div
+            class="overflow-hidden rounded-xl border border-blue-400/20 bg-[#0A1929]/50 backdrop-blur-sm"
+          >
+            <div
+              class="overflow-x-auto overflow-y-auto"
+              style="max-height: 400px"
+            >
+              <table class="w-full min-w-full text-xl border-collapse">
+                <thead>
+                  <tr>
+                    <th
+                      class="w-32 bg-[#20B2AA] p-4 text-center font-medium"
+                    ></th>
+                    <th class="bg-[#20B2AA] p-4 text-center font-medium">
+                      項目一
+                    </th>
+                    <th class="bg-[#20B2AA] p-4 text-center font-medium">
+                      項目二
+                    </th>
+                    <th class="bg-[#20B2AA] p-4 text-center font-medium">
+                      項目三
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-blue-400/20">
+                    <td
+                      class="bg-[#20B2AA] p-4 text-center font-medium hover:bg-teal-600 transition-all duration-50"
+                    >
+                      <button
+                        type="button"
+                        class=""
+                        aria-haspopup="dialog"
+                        aria-expanded="false"
+                        aria-controls="hs-scale-animation-modal"
+                        data-hs-overlay="#hs-scale-animation-modal"
+                      >
+                        崇恩老人
+                      </button>
+                    </td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">
+                      13
+                    </td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">3</td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">5</td>
+                  </tr>
+                  <tr class="border-b border-blue-400/20">
+                    <td class="bg-[#20B2AA] p-4 text-center font-medium">
+                      崇恩護家
+                    </td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">
+                      22
+                    </td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">
+                      11
+                    </td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">
+                      13
+                    </td>
+                  </tr>
+                  <tr class="border-b border-blue-400/20">
+                    <td class="bg-[#20B2AA] p-4 text-center font-medium">
+                      崇祐老人
+                    </td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">4</td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">
+                      31
+                    </td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">
+                      13
+                    </td>
+                  </tr>
+                  <tr class="border-b border-blue-400/20">
+                    <td class="bg-[#20B2AA] p-4 text-center font-medium">
+                      崇祐護家
+                    </td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">4</td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">
+                      31
+                    </td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">
+                      13
+                    </td>
+                  </tr>
+                  <tr class="border-b border-blue-400/20">
+                    <td class="bg-[#20B2AA] p-4 text-center font-medium">
+                      崇智護家
+                    </td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">4</td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">
+                      31
+                    </td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">
+                      13
+                    </td>
+                  </tr>
+                  <tr class="border-b border-blue-400/20">
+                    <td class="bg-[#20B2AA] p-4 text-center font-medium">
+                      普祐老人
+                    </td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">4</td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">
+                      31
+                    </td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">
+                      13
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bg-[#20B2AA] p-4 text-center font-medium">
+                      傳祐老人
+                    </td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">4</td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">
+                      31
+                    </td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">
+                      13
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Modal -->
-    <div id="hs-scale-animation-modal" class="hs-overlay hidden fixed inset-0 z-[80] flex items-center justify-center min-h-screen bg-black bg-opacity-50" role="dialog" tabindex="-1" aria-labelledby="hs-scale-animation-modal-label">
-      <div class="flex items-center m-3 opacity-0 transition-all duration-200 ease-in-out scale-95 hs-overlay-animation-target hs-overlay-open:scale-100 hs-overlay-open:opacity-100 sm:max-w-xl sm:w-full sm:mx-auto">
-        <div class="flex overflow-hidden flex-col w-full bg-white rounded-lg border pointer-events-auto shadow-[0px_0px_20px_0px_rgba(236,253,245,0.80)]">
+    <div
+      id="hs-scale-animation-modal"
+      class="hs-overlay hidden fixed inset-0 z-[80] flex items-center justify-center min-h-screen bg-black bg-opacity-50"
+      role="dialog"
+      tabindex="-1"
+      aria-labelledby="hs-scale-animation-modal-label"
+    >
+      <div
+        class="flex items-center m-3 opacity-0 transition-all duration-100 ease-in-out scale-95 hs-overlay-animation-target hs-overlay-open:scale-100 hs-overlay-open:opacity-100 sm:max-w-xl sm:w-full sm:mx-auto"
+      >
+        <div
+          class="flex overflow-hidden flex-col w-full bg-white rounded-lg border pointer-events-auto shadow-[0px_0px_20px_0px_rgba(236,253,245,0.80)]"
+        >
           <!-- 標題 -->
-          <div class="flex justify-between items-center px-4 py-3 bg-[#20B2AA] border-b">
-            <h3 id="hs-scale-animation-modal-label" class="font-bold text-white">
+          <div
+            class="flex justify-between items-center px-4 py-3 bg-[#20B2AA] border-b"
+          >
+            <h3
+              id="hs-scale-animation-modal-label"
+              class="font-bold text-white"
+            >
               圓餅圖
             </h3>
             <!-- 關閉按鈕 -->
-            <button type="button" class="inline-flex gap-x-2 justify-center items-center text-white rounded-full border border-transparent size-8" aria-label="Close" data-hs-overlay="#hs-scale-animation-modal">
+            <button
+              type="button"
+              class="inline-flex gap-x-2 justify-center items-center text-white rounded-full border border-transparent size-8"
+              aria-label="Close"
+              data-hs-overlay="#hs-scale-animation-modal"
+            >
               <span class="sr-only">Close</span>
-              <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                class="shrink-0 size-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <path d="M18 6 6 18"></path>
                 <path d="m6 6 12 12"></path>
               </svg>
@@ -117,42 +222,43 @@
         </div>
       </div>
     </div>
-  
+
     <!-- Preline -->
     <script src="../node_modules/preline/dist/preline.js"></script>
-      
+
     <!-- Font awesome -->
-    <script src="https://kit.fontawesome.com/a8b708c9db.js" crossorigin="anonymous"></script>
-  
+    <script
+      src="https://kit.fontawesome.com/a8b708c9db.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Chart.js Initialization -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const ctx = document.getElementById('myPieChart').getContext('2d');
+      document.addEventListener("DOMContentLoaded", function () {
+        const ctx = document.getElementById("myPieChart").getContext("2d");
         const myPieChart = new Chart(ctx, {
-          type: 'pie',
+          type: "pie",
           data: {
-            labels: ['項目一', '項目二', '項目三'],
-            datasets: [{
-              data: [33, 33, 33],
-              backgroundColor: [
-                '#FF6384',
-                '#36A2EB',
-                '#FFCE56',
-              ],
-              hoverOffset: 4
-            }]
+            labels: ["項目一", "項目二", "項目三"],
+            datasets: [
+              {
+                data: [33, 33, 33],
+                backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
+                hoverOffset: 4,
+              },
+            ],
           },
           options: {
             responsive: true,
             plugins: {
               legend: {
-                position: 'top',
+                position: "top",
               },
               tooltip: {
-                enabled: true
-              }
-            }
-          }
+                enabled: true,
+              },
+            },
+          },
         });
       });
     </script>
