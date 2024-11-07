@@ -1,4 +1,4 @@
 .DS_Store
 uploadfile/*
-# node_modules/*
+node_modules/*
 package-lock.json
