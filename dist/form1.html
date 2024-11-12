@@ -17,7 +17,7 @@
     >
       <!-- Content -->
       <div
-        class="p-16 mx-auto max-w-7xl rounded-3xl border backdrop-blur-sm border-white/50 flex"
+        class="flex p-16 mx-auto max-w-7xl rounded-3xl border backdrop-blur-sm border-white/50"
         style="
           background: linear-gradient(
             318deg,
@@ -27,7 +27,8 @@
           max-height: calc(100vh - 4rem);
         "
       >
-        <div class="w-full flex flex-col">
+        <!-- Title -->
+        <div class="flex flex-col w-full">
           <div class="flex justify-between items-center mb-16">
             <h1 class="text-4xl font-bold">本日入住人數</h1>
             <a
@@ -38,13 +39,14 @@
             </a>
           </div>
 
+          <!-- Table -->
           <div
             class="overflow-hidden rounded-lg border shadow-[0px_0px_20px_0px_rgba(236,253,245,0.80)] flex h-full w-full border-white/80"
           >
             <div
               class="overflow-x-auto overflow-y-auto w-full"
             >
-              <table class="w-full min-w-full text-xl border-collapse ">
+              <table class="w-full min-w-full text-xl border-collapse">
                 <thead>
                   <tr>
                     <th
@@ -61,6 +63,7 @@
                     </th>
                   </tr>
                 </thead>
+                
                 <tbody>
                   <tr class="border-b border-blue-400/20">
                     <td
@@ -78,10 +81,14 @@
                       </button>
                     </td>
                     <td class="p-4 text-center text-gray-900 bg-white/90">
-                      13
+                      33
                     </td>
-                    <td class="p-4 text-center text-gray-900 bg-white/90">3</td>
-                    <td class="p-4 text-center text-gray-900 bg-white/90">5</td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">
+                      33
+                    </td>
+                    <td class="p-4 text-center text-gray-900 bg-white/90">
+                      33
+                    </td>
                   </tr>
                   <tr class="border-b border-blue-400/20">
                     <td
@@ -191,7 +198,7 @@
         <div
           class="flex overflow-hidden flex-col w-full bg-white rounded-lg border pointer-events-auto shadow-[0px_0px_20px_0px_rgba(236,253,245,0.80)]"
         >
-          <!-- 標題 -->
+          <!-- Modal Title -->
           <div
             class="flex justify-between items-center px-4 py-3 bg-[#20B2AA] border-b"
           >
@@ -201,14 +208,13 @@
             >
               崇恩老人
             </h3>
-            <!-- 關閉按鈕 -->
+            <!-- Close BTN -->
             <button
               type="button"
               class="inline-flex gap-x-2 justify-center items-center text-white rounded-full border border-transparent size-8"
               aria-label="Close"
               data-hs-overlay="#hs-scale-animation-modal"
             >
-              <span class="sr-only">Close</span>
               <svg
                 class="shrink-0 size-4"
                 xmlns="http://www.w3.org/2000/svg"
